@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gamja+Flower&display=swap');
+
+/* font-family: 'Black Han Sans', sans-serif;
+font-family: 'Gamja Flower', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.치매약:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.전체 {
+    background-color: #937dc2;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ------첫째------ */
+.전체 .첫째 {
+    background-color: #c689c6;
+    padding: 20px;
+}
+
+
+.전체 .첫째 .첫자손 {
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+}
+
+/* ------첫자식1------ */
+.전체 .첫째 .첫자손.첫자식1 {
+    position: relative;
+    background-color: #ffabe1;
+    font-family: 'Black Han Sans', sans-serif;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .하 {
+    position: relative;
+    background-image: url(https://image.shutterstock.com/image-photo/halloween-carved-pumpkin-on-city-600w-727206508.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .하 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    color: darkgreen;
+    padding: 3px 5px;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .상 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* left: 0; top: 0; right: 0; bottom: 0; */
+    background-image: url(https://image.shutterstock.com/image-photo/halloween-pumpkin-dark-on-blue-600w-1818039140.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    transform: translate(100%);
+}
+
+.전체 .첫째 .첫자손.첫자식1:hover .상 {
+    transform: translate(0%);
+}
+
+.전체 .첫째 .첫자손.첫자식1 .상 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: bisque;
+    color: darkgreen;
+}
+
+/* ------end첫자식1------ */
+
+/* ------첫자식2------ */
+
+.전체 .첫째 .첫자손.첫자식2 {
+    position: relative;
+    background-color: #9e0b6f;
+    font-family: 'Gamja Flower', cursive;
+    height: 200px;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식2 .상하 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.전체 .첫째 .첫자손.첫자식2 .상하 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #222;
+    padding: 3px 5px;
+}
+
+.전체 .첫째 .첫자손.첫자식2 .상 {
+    z-index: 2;
+    background-image: url(https://image.shutterstock.com/image-photo/woman-riding-bicycle-forest-autumn-600w-1760551934.jpg);
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+.전체 .첫째 .첫자손.첫자식2:hover .상 {
+    transform: translateY(0%);
+}
+
+.전체 .첫째 .첫자손.첫자식2 .하 {
+    z-index: 1;
+    /* z-index는 position이 있어야 적용됨. */
+    background-image: url(https://image.shutterstock.com/image-photo/mountain-biking-man-bike-enjoy-600w-487051012.jpg);
+}
+
+/* ------end첫자식2------ */
+
+/* ------첫자식3------ */
+
+.전체 .첫째 .첫자손.첫자식3 {
+    position: relative;
+    background-color: #fff5e4;
+    height: 200px;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식3 .상하 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.전체 .첫째 .첫자손.첫자식3 .상하 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #222;
+    padding: 3px 5px;
+}
+
+.전체 .첫째 .첫자손.첫자식3 .상 {
+    z-index: 2;
+    background-image: url(https://image.shutterstock.com/image-photo/cozy-autumn-morning-cup-cocoa-600w-1161593875.jpg);
+    transform: scale(0.1);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.전체 .첫째 .첫자손.첫자식3:hover .상 {
+    transform: scale(0.95);
+    opacity: 1;
+}
+
+.전체 .첫째 .첫자손.첫자식3 .하 {
+    z-index: 1;
+    background-image: url(https://image.shutterstock.com/image-photo/cup-cappuccino-heart-shape-autum-600w-719036461.jpg);
+}
+
+/* ------end첫자식3------ */
+
+
+.전체 .첫째 .첫자손.첫자식4 {
+    position: relative;
+    background-color: #ff9494;
+    margin-right: 0;
+    height: 200px;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식4 .비디오 {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.전체 .첫째 .첫자손.첫자식4 .비디오 video {
+    width: 100%;
+}
+
+.전체 .첫째 .첫자손.첫자식4 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 110px);
+    color: #fff;
+}
+
+.전체 .첫째 .첫자손.첫자식4:hover h4 {
+    animation: mymove 2s both;
+}
+
+@keyframes mymove {
+    0% {
+        transform: translate(-50%, 110px);
+    }
+
+    100% {
+        transform: translate(-50%, -130px);
+    }
+}
+
+/* .전체 .첫째 .첫막내 {
+    clear: both;
+} */
+
+/* ------end첫째------ */
